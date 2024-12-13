@@ -42,11 +42,6 @@ a {
     line-height: 1.33;
 }
 
-.heading.lv3 {
-    font-size: 2.2rem;
-    line-height: normal;
-}
-
 .sticky {
     position: sticky;
     top: -44px;
@@ -138,6 +133,7 @@ a {
 /* Hero */
 .hero {
     padding: 42px 0 79px;
+    background-color: #fff;
 }
 
 .hero .body {
@@ -183,6 +179,7 @@ a {
     border-radius: 50%;
     border: none;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .hero-right {
@@ -317,4 +314,236 @@ a {
     font-weight: 500;
     line-height: normal;
     background-color: var(--primary-color);
+}
+
+/* Features */
+.features {
+    margin-top: 65px;
+    padding: 65px 0 50px;
+}
+
+.features .body-top {
+    width: 50%;
+}
+
+.features pre.title,
+.courses pre.title {
+    display: inline-block;
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.features .heading {
+    margin: 18px 0;
+}
+
+.features .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.features .row {
+    margin-top: 80px;
+    display: flex;
+}
+
+.features .thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 106px;
+    border-radius: 18px;
+    background-color: #ffc147;
+}
+
+.features .column:nth-child(2) .thumb {
+    background-color: #ff947a;
+}
+
+.features .column:nth-child(3) .thumb {
+    background-color: #bf83ff;
+}
+
+.features .row .title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features .row .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.68;
+}
+
+.features .column {
+    width: 32%;
+}
+
+.features .column:nth-child(2) {
+    width: 36%;
+}
+
+.features .column:nth-child(1) .desc {
+    width: 168px;
+}
+
+.features .column:nth-child(2) .desc {
+    width: 222px;
+}
+
+.features .column:nth-child(3) .desc {
+    width: 224px;
+}
+
+/* Courses */
+.courses {
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+.courses .heading {
+    margin-top: 18px;
+}
+
+.courses .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.courses .row .desc {
+    width: 525px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.77;
+}
+
+.courses .row a {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+}
+
+.courses-group {
+    margin-top: 79px;
+    display: flex;
+    gap: 0 47px;
+}
+
+.courses-group .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0%;
+}
+
+.courses-group .thumb {
+    display: block;
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+}
+
+.courses-group .info {
+    position: absolute;
+    bottom: -31.5%;
+    padding: 18px 25px 29px;
+    width: 325px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses-group .title a {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.courses-group .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.courses-group .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses-group .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.courses-group .classes-time {
+    margin: 18px 0 0 -10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.courses-group .classes-time .classes,
+.courses-group .classes-time .time {
+    display: inline-flex;
+    align-items: center;
+}
+
+.courses-group .classes-time .classes::before,
+.courses-group .classes-time .time::before {
+    display: inline-block;
+    content: '';
+    margin: 0 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1ebfc1;
+}
+
+.courses .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 389px auto 0;
+    width: 862px;
+}
+
+.courses .stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses .stats strong {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.courses .stats .desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
 }
