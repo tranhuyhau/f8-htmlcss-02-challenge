@@ -198,6 +198,7 @@ a {
     border-radius: 50%;
     border: none;
     background-color: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
@@ -634,6 +635,14 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1px solid currentColor;
+    color: var(--second-color);
+    background-color: transparent;
+}
+
+.feedback-left .chevron-left:hover,
+.feedback-left .chevron-right:hover {
+    color: #fff;
     background-color: var(--second-color);
     cursor: pointer;
 }
